@@ -2,11 +2,10 @@ import { defineStore } from 'pinia'
 
 export const useTodos = defineStore('todos', {
   state: () => ({
-    /** @type {{ text: string, id: number, isFinished: boolean }[]} */
+    /** @type {{ text: string, id: number, isFinished: boolean }[]} */ //anotation
     todos: [],
-    /** @type {'all' | 'finished' | 'unfinished'} */
+    /** @type {'all' | 'finished' | 'unfinished'} */ //used anotation
     filter: 'all',
-    // type will be automatically inferred to number
     nextId: 0,
   }),
   getters: {
